@@ -6,5 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+  },
+    // Désactiver complètement TypeScript
+  esbuild: {
+    loader: 'jsx',
   }
 })
